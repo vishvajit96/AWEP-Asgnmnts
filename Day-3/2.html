@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        .navleft {
+            flex: 4;
+            margin-left: 10px;
+            font-size: 28px;
+            color: white;
+        }
+
+        .navright {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            margin-right: 10px;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+            padding: 4px;
+            font-size: 16px;
+        }
+
+        .mainleftmost {
+            display: flex;
+            justify-content: center;
+            margin: 8px;
+            color: white;
+            font-size: 16px;
+            border: 1px solid black;
+            padding: 4px;
+            border-radius: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div style="height: 100vh; background: royalblue; display: flex; flex-direction: column;">
+        <div style="flex: 1; display: flex; align-items: center; ">
+            <div class="navleft">
+                My Project
+            </div>
+            <div style="flex: 1; display: flex; margin: 10px;">
+                <div class="navright">
+                    Home
+                </div>
+                <div class="navright">
+                    AboutUs
+                </div>
+                <div class="navright">
+                    Setting
+                </div>
+            </div>
+        </div>
+
+        <!--Main-->
+        <div style="flex: 8; background: gray; display: flex;">
+            <div style="flex: 2; display: flex; flex-direction: column;">
+                <h3 style="margin: 10px;">Profesion:</h3>
+                <div class="mainleftmost">
+                    Buisenessmen
+                </div>
+                <div class="mainleftmost">
+                    Developer
+                </div>
+                <div class="mainleftmost">
+                    Teacher
+                </div>
+                <div class="mainleftmost">
+                    Author
+                </div>
+                <div class="mainleftmost">
+                    Scientist
+                </div>
+            </div>
+
+            <div style="background: rgb(86, 122, 86); flex: 4;">
+
+                <h3 style="margin: 10px;">Names:</h3>
+
+                <div class=" mainleftmost">
+                    Sachin
+                </div>
+                <div class=" mainleftmost">
+                    Rahul
+                </div>
+                <div class=" mainleftmost">
+                    Anil
+                </div>
+            </div>
+
+            <div style="background: gray; flex: 6;">
+                3
+            </div>
+            <div style="background: rgb(163, 117, 163); flex: 2;">
+                4
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div style="flex: 1; background: silver;">
+            Footer
+        </div>
+    </div>
+</body>
+
+</html>
