@@ -1,0 +1,35 @@
+*{margin:0;}
+.omi{
+    background-color:whitesmoke;
+    display:flex;
+
+}
+.omi1{
+    background-color: aquamarine;
+      flex:0.5;
+      display: flex;
+      flex-direction: column;
+    
+
+    }
+    .pic img{border-radius: 50%;margin-top: 10px;}
+
+.omi2{background-color: gainsboro;
+        flex:3;
+        display: flex;
+        flex-direction: column;
+
+    }
+.photo img{margin-left: 50px; padding-top: 50px;}
+.resume a{text-decoration: none;}
+
+.icon ul li{display: inline-flex;
+padding: 10px;
+margin-top: 15px;
+}
+.icon ul li i{color: darkorange;}
+.me{display: flex; flex-direction: column; align-items: center; padding: 8px;}
+.info{padding: 10px;}
+.info i{padding-right: 10px;}
+.tech img{padding: 20px 0px 0px 50px;}
+.tech{padding: 10px; border-radius: 10px;}
