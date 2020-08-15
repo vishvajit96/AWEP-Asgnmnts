@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        #id1 {
+            background: gray;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #hello {
+            background: yellow;
+            font-size: 64px;
+            color: rgb(14, 26, 199);
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 8px;
+        }
+    </style>
+
+    <script src="2.js"></script>
+</head>
+
+<body>
+    <!--Get Element by ID-->
+    <div id="id1">
+        <div id="hello" onmouseover="mover();" onmouseout="mout();">
+            Hello World!!
+        </div>
+    </div>
+</body>
+
+</html>
