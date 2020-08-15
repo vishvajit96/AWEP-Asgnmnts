@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatsapp Layout</title>
+
+    <script src="1.js"></script>
+
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+
+        #id1 {
+            height: 100vh;
+            display: flex;
+        }
+
+        .header {
+            height: 50px;
+            flex: 1;
+            background: #075E54;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 4px;
+            border-bottom: 1px solid black;
+            color: blanchedalmond;
+            font-size: 18px;
+        }
+
+        #inp1 {
+            height: 25px;
+            width: 80%;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        #inp2 {
+            height: 25px;
+            width: 80%;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .btn {
+            height: 25px;
+            margin-left: 10px;
+            border-radius: 8px;
+            background: green;
+            font-size: 15px;
+        }
+
+        .bg {
+            background-image: url(whatsapp.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .footer {
+            background: #075E54;
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+
+        .backicon {
+            height: 25px;
+            width: 25px;
+            border-radius: 20px;
+        }
+
+        .profilphoto {
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="id1">
+
+        <!--First Chat window-->
+
+        <div style=" flex: 1; display: flex;">
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <div style=" flex: 2;"></div>
+
+                <div style=" flex: 10; display: flex;">
+                    <div style=" flex: 5;"></div>
+
+                    <!--Main block achieved-->
+                    <div style="border:2px solid black; flex: 8; display: flex; flex-direction: column;">
+
+                        <div style="display: flex; justify-content:center; align-items: center;">
+                            <div class="header" style="flex: 1;">
+                                <img src="back-icon.jpg" class="backicon">
+                            </div>
+                            <div class="header" style="flex: 1;">
+                                <img src="akshay.png" class="profilphoto">
+                            </div>
+                            <div class="header" style="flex: 8;">
+                                Akshay B.
+                            </div>
+                            <div class="header" style="flex: 1;">
+                                menu
+                            </div>
+                        </div>
+                        <div class="bg" style="flex: 6; display: flex;">
+                            <div style="flex: 1;">
+                                ReceivingSide
+                            </div>
+                            <div style="flex: 1; color: white;">
+                                <div id="commentdiv1">
+                                    <div id="placehere1" style="display: flex; flex-direction: column;">
+                                        place Here
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <input id="inp1" type="text" placeholder="Type Here">
+                            <button class="btn" onclick="send1();">Enter</button>
+                        </div>
+                    </div>
+                    <div style="flex: 3;"></div>
+                </div>
+                <div style=" flex: 2;"></div>
+
+            </div>
+        </div>
+
+
+        <!--Second Chat window-->
+
+        <div style=" flex: 1; display: flex;">
+            <div style="flex: 1; display: flex; flex-direction: column;">
+                <div style=" flex: 2;"></div>
+
+                <div style=" flex: 10; display: flex;">
+                    <div style=" flex: 3;"></div>
+
+
+
+                    <!--Main block achieved-->
+                    <div style="border:2px solid black; flex: 8; display: flex; flex-direction: column;">
+                        <div style="display: flex; justify-content:center; align-items: center;">
+                            <div class="header" style="flex: 1;">
+                                <img src="back-icon.jpg" class="backicon">
+                            </div>
+                            <div class="header" style="flex: 1;">
+                                <img src="onkar.png" class="profilphoto">
+                            </div>
+                            <div class="header" style="flex: 8;">
+                                Onkar C.
+                            </div>
+                            <div class="header" style="flex: 1;">
+                                menu
+                            </div>
+                        </div>
+
+                        <div class="bg" style="flex: 6; display: flex;">
+                            <div style="flex: 1;">
+                                ReceivingSide
+                            </div>
+                            <div style="flex: 1; color: white;">
+                                <div id="commentdiv2">
+                                    <div id="placehere2">
+                                        place Here
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="footer">
+                            <input id="inp2" type="text" placeholder="Type Here">
+                            <button class="btn" onclick="send2();">Enter</button>
+                        </div>
+                    </div>
+
+                    <div style="flex: 5;"></div>
+                </div>
+                <div style=" flex: 2;"></div>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
