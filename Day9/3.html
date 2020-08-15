@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="3.js"></script>
+    <link rel="stylesheet" href="3.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row bg-info d-flex justify-content-center align-items-center" style="height:10vh">
+            My project
+        </div>
+        <div class="row " style="height:40vh;">
+            <div class="col-2"></div>
+            <div class="col-8 border d-flex bg-light align-items-center justify-content-center ">
+                Welcome
+            </div>
+
+        </div>
+        <div class="row">
+
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="row">
+                    <input id="l1" onclick="like()" class="col-2" type="button" value="Like">
+                    <input id="i1" class="col-8" placeholder="write here" value="">
+                    <input class="col-2" onclick="postcmt()" type="button" value="Comment">
+                </div>
+                <div id="c2" class="row  mt-1">
+
+                    <div id="c1" class=" col-12 d-flex justify-content-between " style="visibility: hidden;">
+                        <div>somethis</div>
+                        <button onclick="del(this)" class="btn btn-outline-danger btn-sm">Delete</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
